@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, Image } from 'react-native';
+import { View, Text, StyleSheet, Image,Button } from 'react-native';
 import { Card } from 'react-native-elements';
 import Master from '../assets/MASTERR.png';
 
@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
   },
   cardHolder: {
     color: '#fff',
-    marginBottom: 10,
+    marginTop: 10,
     fontWeight: 'bold',
   },
   bottomRow: {

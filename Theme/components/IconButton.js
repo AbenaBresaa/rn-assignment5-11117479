@@ -1,30 +1,26 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
 
-const IconButton = ({ buttonIcon, buttonText }) => {
+const IconButton = ({ buttonIcon, buttonText, color }) => {
   return (
-    <TouchableOpacity style={styles.iconButton}>
-      <Image source={buttonIcon} style={styles.iconImage} />
-      <Text style={styles.iconText}>{buttonText}</Text>
+    <TouchableOpacity style={styles.buttonContainer}>
+      <Image source={buttonIcon} style={[styles.buttonIcon, { tintColor: color }]} />
+      <Text style={[styles.buttonText, { color: color }]}>{buttonText}</Text>
     </TouchableOpacity>
   );
 };
 
 const styles = StyleSheet.create({
-  iconButton: {
+  buttonContainer: {
     alignItems: 'center',
-    marginHorizontal: 10,
-    
   },
-  iconImage: {
-    width: 35,
-    height: 35,
+  buttonIcon: {
+    width: 30,
+    height: 30,
     marginBottom: 5,
-    backgroundColor: '#151E3D',
   },
-  iconText: {
-    color: '#000', 
-    fontSize: 12,
+  buttonText: {
+    fontSize: 16,
   },
 });
 
