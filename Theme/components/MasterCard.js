@@ -41,11 +41,12 @@ const styles = StyleSheet.create({
     padding: 10,
   },
   cardNumber: {
-    fontSize: 20,
+    fontSize: 30,
     color: '#fff',
     marginBottom: 10,
     paddingTop:30,
-    marginLeft: 60,
+    marginLeft: 20,
+    fontWeight: 'bold',
   },
   cardHolder: {
     color: '#fff',
